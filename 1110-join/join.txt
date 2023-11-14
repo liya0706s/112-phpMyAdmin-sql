@@ -1,9 +1,17 @@
 SELECT * FROM `students`,`dept` where `students`.`dept`=`dept`.`id`
 
+<<<<<<< HEAD
 ------------------------------------------------------------
 SELECT `students`.*,`dept`.`name` as '科別' FROM `students`,`dept` where `students`.`dept`=`dept`.`id`;
 
 ---------------------------------------------------------
+=======
+------------------------------------------------------------1
+SELECT `students`.*,`dept`.`name` as '科別' 
+FROM `students`,`dept` where `students`.`dept`=`dept`.`id`;
+
+---------------------------------------------------------2
+>>>>>>> 395b70d2aea283409d9c97026342ce0b95264bd6
 SELECT `students`.`id`,
 	   `students`.`school_num`,
        `students`.`name`,
@@ -15,7 +23,11 @@ FROM `students`,
 	 `dept`,
      `graduate_school`,
      `status`
+<<<<<<< HEAD
 ------------------------------------------------------------------
+=======
+------------------------------------------------------------------3
+>>>>>>> 395b70d2aea283409d9c97026342ce0b95264bd6
 
 SELECT `students`.`id`,
 	   `students`.`school_num`,
@@ -35,12 +47,22 @@ where `students`.`dept`=`dept`.`id` &&
 	  `students`.`graduate_at`=`graduate_school`.`id`  &&
       `students`.`status_code`=`status`.`code`
 
+<<<<<<< HEAD
 -------------------------------------------------
 
 SELECT `class_code` ,count(*) as '人數' FROM `class_student` group by `class_code`
 
 
 ----------------------------------------------------
+=======
+-------------------------------------------------4
+
+SELECT `class_code` ,count(*) as '人數' FROM `class_student` 
+group by `class_code`
+
+
+----------------------------------------------------6
+>>>>>>> 395b70d2aea283409d9c97026342ce0b95264bd6
 SELECT `class_code` ,
         `classes`.`name` as '班級名稱',
         `classes`.`tutor` as '班導師',
@@ -248,6 +270,7 @@ ORDER BY
 
 
 
+<<<<<<< HEAD
 ---------------------------------------------------
 SELECT `A`.`name`,
 	`A`.`score` ,
@@ -265,6 +288,8 @@ FROM (SELECT `students`.`name` as 'name',
       		`class_student`.`class_code`='102')A
 ORDER BY `A`.`score` DESC
 
+=======
+>>>>>>> 395b70d2aea283409d9c97026342ce0b95264bd6
 
 
 
